@@ -30,7 +30,7 @@ export default function Projects() {
           alt="Imagem projeto app mobile de versionamento de listas"
           link="https://github.com/sileo18/GitMarket"
           content="Sistema de gerenciamento de livros utilizando Node.js e SQLite.
-           O sistema permiti o cadastro, visualização, edição e exclusão de livros.
+           O sistema permite o cadastro, visualização, edição e exclusão de livros.
            Além disso, a autenticação de usuários é feita usando tokens JWT."
         />
  
