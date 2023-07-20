@@ -20,7 +20,7 @@ export default function Projects() {
           src={GitMarket}
           alt="Imagem projeto app mobile de versionamento de listas"
           link="https://github.com/sileo18/GitMarket"
-          content="GitMarket é um software que está em desenvolvimento utilizando 
+          content="GitMarket é um software que está em desenvolvimento usando 
           ReactNative, TypeScript, SQLite e NodeJS. O objetivo central do aplicativo é 
           basicamentepossibilitar o versionamento de listas de mercado
           "
