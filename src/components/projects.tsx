@@ -22,8 +22,7 @@ export default function Projects() {
           link="https://github.com/sileo18/GitMarket"
           content="GitMarket é um software que está em desenvolvimento usando 
           ReactNative, TypeScript, SQLite e NodeJS. O objetivo central do aplicativo é 
-          basicamentepossibilitar o versionamento de listas de mercado
-          "
+          basicamentepossibilitar o versionamento de listas de mercado"
         />
 
         <ProjectsAll
@@ -32,7 +31,7 @@ export default function Projects() {
           link="https://github.com/sileo18/GitMarket"
           content="Sistema de gerenciamento de livros utilizando Node.js e SQLite.
            O sistema permiti o cadastro, visualização, edição e exclusão de livros.
-           Além disso, a autenticação de usuários é feita usando tokens JWT. "
+           Além disso, a autenticação de usuários é feita usando tokens JWT."
         />
  
  <div className="w-80 h-1 bg-black absolute flex items-center justify-center right-[350px] top-1/2 z-0">
