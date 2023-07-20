@@ -16,7 +16,7 @@ export default function Header() {
             </div>  
 
             <div className='text-black flex gap-6 text-center md:flex-row sm:flex-col'>
-              <a href='#work-top' className='text-xl font-medium hover:scale-105 transition-transform cursor-pointer'>Work</a>
+              <a href='#work-top' className='text-xl font-medium hover:scale-105 transition-transform cursor-pointer'>Trabalho</a>
               <a href='#resume-top' className='text-xl font-medium hover:scale-105 transition-transform cursor-pointer'>Resume</a>
               <a className='text-xl font-medium hover:scale-105 transition-transform cursor-pointer'>Contact</a>
             </div>
