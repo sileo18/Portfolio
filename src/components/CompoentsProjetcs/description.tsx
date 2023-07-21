@@ -20,7 +20,7 @@ export function Description({ content }: DescriptionProjectsProps) {
         initial={{ opacity: 0, y: 20 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.8 }}
-        className="w-80 h-auto"
+        className="w-80 h-[175px] flex flex-col justify-center"
       >
         <p className="text-center leading-relaxed text-lg" content={content}>{content}</p>
       </motion.div>

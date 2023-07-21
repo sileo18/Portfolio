@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FiGithub } from "react-icons/fi";
 import { InView } from "react-intersection-observer";
 
+
 interface ButtonGitRepoProps {
   link: string;
 }

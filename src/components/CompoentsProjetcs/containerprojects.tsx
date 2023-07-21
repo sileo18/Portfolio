@@ -19,7 +19,7 @@ export function ContainerProjects({ src, alt }: ContainerProjectsProps) {
         transition={{ duration: 0.8 }}
         className="w-80 h-auto flex items-center justify-center z-10"
       >
-        <img className="h-80 object-contain hover:scale-105 transition-transform rounded-2xl " src={src} alt={alt}></img>
+        <img className="h-80 object-contain hover:scale-105 transition-transform rounded-2xl" src={src} alt={alt}></img>
         
       </motion.div>
     )}
