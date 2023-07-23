@@ -2,6 +2,7 @@
 import { ProjectsAll } from "./CompoentsProjetcs/projectsAll";
 import TodoList from "../assets/TodoList.png";
 import GitMarket from "../assets/gitMarket.png";
+import Books from "../assets/Fall Reading List.jpg"
 
 interface ProjectProps {
   lang: boolean;
@@ -34,7 +35,7 @@ export default function Projects({ lang }: ProjectProps) {
         />
 
         <ProjectsAll
-          src={GitMarket}
+          src={Books}
           alt="Imagem projeto app mobile de versionamento de listas"
           link="https://github.com/sileo18/GitMarket"
           content={

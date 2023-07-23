@@ -21,7 +21,7 @@ export default function Education({ lang }: EducationProps) {
               {lang ? "Educação" : "Education"}
             </p>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 dark:text-white">
             <div>
               <p className="font-semibold text-xl">
                 {" "}

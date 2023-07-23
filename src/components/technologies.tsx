@@ -19,7 +19,7 @@ export default function Technologies({ lang }: TechnologiesProps) {
           <p className="text-2xl font-bold bg-black px-2 text-white">
             {lang ? "Tecnologias" : "Technologies"}
           </p>
-          <div>
+          <div className="dark:text-white">
             <p className="text-base font-medium">TypeScript</p>
             <p className="text-base font-medium">React</p>
             <p className="text-base font-medium">NodeJS</p>

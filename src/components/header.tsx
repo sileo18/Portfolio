@@ -6,46 +6,31 @@ import { motion } from "framer-motion";
 interface HeaderProps {
   lang: boolean;
   setLang: React.Dispatch<React.SetStateAction<boolean>>;
-  transition: boolean,
-  setTransition:  React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export default function Header({ lang, setLang, transition, setTransition }: HeaderProps) {
+export default function Header({ lang, setLang }: HeaderProps) {
   const toogleLang = () => {
     setLang(!lang);
   };
 
-  const toogleTransition = () => {
-    setTransition(false)
-
-    const timer = setTimeout(() => {
-      setTransition(true);
-    }, 500);
-    
-  }  
-
   return (
-    <header className="flex w-full px-24 bg-white shadow-xl justify-between items-center py-8 md:flex-row sm:flex-col sm:gap-8 sm:relative md:fixed z-20">
+    <header className="flex w-full px-24 bg-white dark:bg-zinc-900 shadow-xl justify-between items-center py-8 md:flex-row sm:flex-col sm:gap-8 sm:relative md:fixed z-20">
       <div className="flex gap-4 items-center">
         <FaLanguage
           size={30}
-          className="cursor-pointer hover:scale-105 transition-transform"
+          className="dark:text-white cursor-pointer hover:scale-105 transition-transform"
           onClick={() => {
             toogleLang();
-            toogleTransition();
           }}
         />
       </div>
 
-      <div className="text-black flex gap-6 text-center md:flex-row sm:flex-col">
+      <div className="text-black dark:text-white flex gap-6 text-center md:flex-row sm:flex-col">
         <a
           href="#work-top"
           className="text-xl font-medium hover:scale-105 transition-transform cursor-pointer"
         >
-          <motion.div    
-        initial={{ opacity: 1}}
-        animate={transition ? { opacity: 1 } : { opacity: 0 } }
-        transition={{ duration: 0.5 }}>{lang ? "Trabalhos" : "Work"}</motion.div>
+          {lang ? "Trabalhos" : "Work"}
         </a>
         <a
           href="#resume-top"
@@ -61,9 +46,8 @@ export default function Header({ lang, setLang, transition, setTransition }: Hea
       <div className="flex gap-4 items-center">
         <a target="_blank" href="https://github.com/sileo18">
           <FiGithub
-            className="cursor-pointer  hover:scale-105 transition-transform"
+            className="dark:text-white cursor-pointer  hover:scale-105 transition-transform"
             size={26}
-            color="#000000"
           />
         </a>
 
@@ -71,11 +55,10 @@ export default function Header({ lang, setLang, transition, setTransition }: Hea
           target="_blank"
           href="https://www.linkedin.com/in/lucas-antonio-toledo-sileo-b42593237/"
         >
-        <SlSocialLinkedin
-          className="cursor-pointer hover:scale-105 transition-transform"
-          size={26}
-          color="#000000"
-        />
+          <SlSocialLinkedin
+            className="dark:text-white cursor-pointer hover:scale-105 transition-transform"
+            size={26}
+          />
         </a>
       </div>
     </header>

@@ -14,7 +14,7 @@ export default function Resume({ lang }: ResumeProps) {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col gap-4"
+          className="flex flex-col gap-4 dark:text-white"
         >
           <p className="text-3xl font-bold">{lang ? "Currículo" : "Resume"}</p>
           <p className="text-base font-light max-w-[800px]">

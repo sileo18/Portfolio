@@ -22,7 +22,7 @@ export function Description({ content }: DescriptionProjectsProps) {
         transition={{ duration: 0.8 }}
         className="w-80 h-[175px] flex flex-col justify-center"
       >
-        <p className="text-center leading-relaxed text-lg" content={content}>{content}</p>
+        <p className="text-center dark:text-white leading-relaxed text-lg" content={content}>{content}</p>
       </motion.div>
     )}
   </InView>

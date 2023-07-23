@@ -15,14 +15,12 @@ function App() {
 
   const [lang, setLang] = useState(false)
 
-  const [transition, setTransition] = useState(true)
-
   return (
-    <main className="flex flex-col justify-center bg-white min-h-screen relative overflow-x-hidden">
+    <main className="flex flex-col justify-center bg-white dark:bg-zinc-800 min-h-screen relative overflow-x-hidden">
       {/* Welcome Page */}
       <div className="flex flex-col min-w-full min-h-screen ">
         {/*Header */}
-        <Header lang={lang} setLang={setLang} transition={transition} setTransition={setTransition} />       
+        <Header lang={lang} setLang={setLang} />       
 
         {/*Main */}
         <Main lang={lang} />
@@ -54,11 +52,11 @@ function App() {
         {/*Download*/}
         <Download lang={lang}/>
 
-        <div className="w-3 h-[500px] bg-black absolute left-44 bottom-0 lg:flex sm:hidden"></div>
+        <div className="w-3 h-[500px] bg-black dark:bg-white opacity-10 absolute left-44 bottom-0 lg:flex sm:hidden"></div>
 
-        <div className="w-3 h-[300px] bg-black absolute left-56 bottom-0 lg:flex sm:hidden"></div>
+        <div className="w-3 h-[300px] bg-black dark:bg-white opacity-10 absolute left-56 bottom-0 lg:flex sm:hidden"></div>
 
-        <div className="w-3 h-[350px] bg-black absolute right-48 bottom-0 lg:flex sm:hidden"></div>
+        <div className="w-3 h-[350px] bg-black dark:bg-white opacity-10 absolute right-48 bottom-0 lg:flex sm:hidden"></div>
       </div>
     </main>
   );

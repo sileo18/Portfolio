@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { FiGithub } from "react-icons/fi";
 import { InView } from "react-intersection-observer";
 
-
 interface ButtonGitRepoProps {
   link: string;
 }
@@ -19,11 +18,13 @@ export function ButtonGitRepo({ link }: ButtonGitRepoProps) {
           className="col-span-1 flex justify-center max-h-14 my-auto"
         >
           <a className="cursor-pointer w-full" target="blank" href={link}>
-            <button className="px-2 py-2 flex justify-center items-center gap-2 text-center
-             border border-solid border-black rounded-full w-full font-bold hover:bg-black
-              hover:bg-opacity-20 transition-all">
+            <button
+              className="px-2 py-2 flex justify-center items-center gap-2 text-center
+             border border-solid border-black dark:border-white dark:text-white dark:bg-white dark:bg-opacity-20 rounded-full w-full font-bold hover:bg-black
+              hover:bg-opacity-20 transition-all"
+            >
               Git Repo
-              <FiGithub size={26} color="#000000" />
+              <FiGithub size={26} className="dark:text-white" />
             </button>
           </a>
         </motion.div>
