@@ -9,10 +9,10 @@ interface DownloadProps {
 
 export default function Download({ lang }: DownloadProps) {
   const downloadFile = () => {
-    const fileContent = "../assets/gitMartket.png";
-    const fileType = "png";
+    const fileContent = "../assets/Currículo.pdf";
+    const fileType = "pdf";
     const blob = new Blob([fileContent], { type: fileType });
-    saveAs(blob, "gitMarket.png");
+    saveAs(blob, "Currículo.pdf");
   };
 
   return (

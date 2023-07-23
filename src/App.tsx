@@ -52,11 +52,11 @@ function App() {
         {/*Download*/}
         <Download lang={lang}/>
 
-        <div className="w-3 h-[500px] bg-black dark:bg-white opacity-10 absolute left-44 bottom-0 lg:flex sm:hidden"></div>
+        {/* <div className="w-3 h-[500px] bg-black dark:bg-white opacity-10 absolute left-44 bottom-0 lg:flex sm:hidden"></div>
 
         <div className="w-3 h-[300px] bg-black dark:bg-white opacity-10 absolute left-56 bottom-0 lg:flex sm:hidden"></div>
 
-        <div className="w-3 h-[350px] bg-black dark:bg-white opacity-10 absolute right-48 bottom-0 lg:flex sm:hidden"></div>
+        <div className="w-3 h-[350px] bg-black dark:bg-white opacity-10 absolute right-48 bottom-0 lg:flex sm:hidden"></div> */}
       </div>
     </main>
   );

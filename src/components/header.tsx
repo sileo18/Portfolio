@@ -1,7 +1,6 @@
 import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FaLanguage } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 interface HeaderProps {
   lang: boolean;

@@ -1,6 +1,6 @@
 "use client";
 import { ProjectsAll } from "./CompoentsProjetcs/projectsAll";
-import TodoList from "../assets/TodoList.png";
+import Widget from "../assets/Widget.png";
 import GitMarket from "../assets/gitMarket.png";
 import Books from "../assets/Fall Reading List.jpg"
 
@@ -13,13 +13,13 @@ export default function Projects({ lang }: ProjectProps) {
     <>
       <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-12">
         <ProjectsAll
-          src={TodoList}
-          alt="Imagem projeto lista de afazeres"
-          link="https://github.com/sileo18/TodoList"
+          src={Widget}
+          alt="Widget"
+          link="https://github.com/sileo18/weather-widget"
           content={
             lang              
-              ? "Aplicativo de lista de tarefas usando React. Ele permite aos usuários criar, visualizar, e excluir tarefas. Além disso também tem o recurso como marcação de tarefas como concluídas e pesquisa pelo nome"
-              : "Task list application using React. It allows users to create, view, and delete tasks. Additionally, it also features task completion marking and searching by name."
+              ? "Uma widget feita usando React que exibe informações climáticas. Ela permite que o usuário insira o nome da cidade desejada para visualizar a descrição do clima, a temperatura em Fahrenheit (°F) e Celsius (°C)"
+              : "A React widget that displays weather information for a specific city. It allows users to enter the desired city name to view the weather description, temperature in Fahrenheit (°F), and Celsius (°C)"
           }
         />
 
@@ -37,7 +37,7 @@ export default function Projects({ lang }: ProjectProps) {
         <ProjectsAll
           src={Books}
           alt="Imagem projeto app mobile de versionamento de listas"
-          link="https://github.com/sileo18/GitMarket"
+          link="https://github.com/sileo18/Library"
           content={
             lang             
               ? "Sistema de gerenciamento de livros utilizando Node.js e SQLite. O sistema permiti o cadastro, visualização, edição e exclusão de livros. Além disso, a autenticação de usuários é feita usando tokens JWT. "

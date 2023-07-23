@@ -16,9 +16,9 @@ export default function Main({ lang }: MainProps) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 15 }}
           transition={{ delay: 0.25 }}
-          className="bg-black dark:bg-white w-[440px] h-[580px] flex shadow-lg md:flex sm:hidden"
+          className="bg-lines bg-fixed bg-left bg-contain bg-no-repeat bg- w-[440px] h-[580px] flex shadow-lg md:flex sm:hidden"
         >
-          .
+          {/* <img className="bg-fixed" src={Lines} alt="" /> */}
         </motion.div>
 
         <motion.div
