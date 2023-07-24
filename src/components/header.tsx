@@ -13,7 +13,7 @@ export default function Header({ lang, setLang }: HeaderProps) {
   };
 
   return (
-    <header className="flex w-full px-24 bg-white dark:bg-zinc-900 shadow-xl justify-between items-center py-8 md:flex-row sm:flex-col sm:gap-8 sm:relative md:fixed z-20">
+    <header className="flex flex-col justify-center items-center md:flex-row md:justify-between gap-8 md:gap-0  w-full px-24 bg-white dark:bg-zinc-900 shadow-xl py-8  md:fixed z-20">
       <div className="flex gap-4 items-center">
         <FaLanguage
           size={30}
@@ -24,7 +24,10 @@ export default function Header({ lang, setLang }: HeaderProps) {
         />
       </div>
 
-      <div className="text-black dark:text-white flex gap-6 text-center md:flex-row sm:flex-col">
+      <div className="flex flex-col md:flex-row text-black dark:text-white  gap-6 text-center">
+      <a href="#home-top" className="text-xl font-medium hover:scale-105 transition-transform cursor-pointer">
+          {lang ? "Ínicio" : "Home"}
+        </a>
         <a
           href="#work-top"
           className="text-xl font-medium hover:scale-105 transition-transform cursor-pointer"
@@ -36,10 +39,7 @@ export default function Header({ lang, setLang }: HeaderProps) {
           className="text-xl font-medium hover:scale-105 transition-transform cursor-pointer"
         >
           {lang ? "Currículo" : "Resume"}
-        </a>
-        <a className="text-xl font-medium hover:scale-105 transition-transform cursor-pointer">
-          {lang ? "Contato" : "Contact"}
-        </a>
+        </a>        
       </div>
 
       <div className="flex gap-4 items-center">

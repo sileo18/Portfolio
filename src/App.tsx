@@ -18,7 +18,7 @@ function App() {
   return (
     <main className="flex flex-col justify-center bg-white dark:bg-zinc-800 min-h-screen relative overflow-x-hidden">
       {/* Welcome Page */}
-      <div className="flex flex-col min-w-full min-h-screen ">
+      <div id="home-top" className="flex flex-col min-w-full min-h-screen ">
         {/*Header */}
         <Header lang={lang} setLang={setLang} />       
 

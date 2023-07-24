@@ -16,7 +16,7 @@ export default function Main({ lang }: MainProps) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 15 }}
           transition={{ delay: 0.25 }}
-          className="bg-lines bg-fixed bg-left bg-contain bg-no-repeat bg- w-[440px] h-[580px] flex shadow-lg md:flex sm:hidden"
+          className="bg-lines bg-fixed bg-left bg-contain bg-no-repeat w-[400px] h-[580px] shadow-lg hidden md:flex"
         >
           {/* <img className="bg-fixed" src={Lines} alt="" /> */}
         </motion.div>
@@ -27,15 +27,15 @@ export default function Main({ lang }: MainProps) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 15 }}
           transition={{ delay: 0.25 }}
-          className="flex flex-col justify-start gap-9 w-[500px] md:items-start sm:items-center"
+          className="flex flex-col items-center justify-start gap-9 w-[500px] md:items-start"
         >
-          <p className="text-3xl dark:text-white font-700 leading-snug md:text-left sm:text-center">
+          <p className="text-3xl dark:text-white font-700 leading-snug md:text-left text-center">
             {lang
               ? "Olá meu nome é Lucas, atualmente estou estudando e procurando meu primeiro emprego!"
               : "Hi my name is Lucas, I am currently studying and seeking my first job!"}
           </p>
 
-          <p className="text-lg dark:text-white font-400 leading-snug md:text-left sm:text-center">
+          <p className="text-lg dark:text-white font-400 leading-snug md:text-left text-center">
             {lang
               ? "Atualmente, estou estudando desenvolvimento full stack com foco em TypeScript, Node.js e MySQL, mas também tenho uma boa familiaridade com o desenvolvimento front-end."
               : "I am currently studying full stack development with a focus on TypeScript, Node.js and MySQL, but I also have a good familiarity with front-end development."}
