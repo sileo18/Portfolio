@@ -16,7 +16,7 @@ export default function Main({ lang }: MainProps) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 15 }}
           transition={{ delay: 0.25 }}
-          className="bg-[url('./assets/Lines.jpg')] bg-fixed bg-left bg-contain bg-no-repeat w-[400px] h-[580px] shadow-lg hidden md:flex"
+          className="bg-[url('../assets/Lines.jpg')] bg-fixed bg-left bg-contain bg-no-repeat w-[400px] h-[580px] shadow-lg hidden md:flex"
         >
           {/* <img className="bg-fixed" src={Lines} alt="" /> */}
         </motion.div>
