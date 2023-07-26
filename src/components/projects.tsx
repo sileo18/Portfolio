@@ -1,8 +1,8 @@
 "use client";
-import { ProjectsAll } from "./CompoentsProjetcs/projectsAll";
-import Widget from "../assets/Widget.png";
-import GitMarket from "../assets/gitMarket.png";
-import Books from "../assets/Fall Reading List.jpg"
+import { ProjectsAll } from "./CompoentsProjetcs/projectsAll" ;
+import Widget from "/assets/Widget.png";
+import GitMarket from "/assets/gitMarket.png";
+import Books from "/assets/Fall Reading List.jpg"
 
 interface ProjectProps {
   lang: boolean;
